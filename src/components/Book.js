@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class Book extends Component {
-    state = {
-        
-    };
+    state = {}
 
     render() {
         const { image } this.props
