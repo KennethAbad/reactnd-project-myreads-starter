@@ -20,7 +20,7 @@ class ListBooks extends Component {
         
         this.props.library.forEach((book) => {
             if(book.shelf === "wantToRead") {
-                wnatToRead.push(book)
+                wantToRead.push(book)
             }
         })
         
