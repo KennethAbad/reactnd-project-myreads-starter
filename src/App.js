@@ -22,13 +22,13 @@ class BooksApp extends Component {
     library: [],  
     showSearchPage: true
   }
-
+  // This method grabs all the books from the api through ajax requests and creates a library.
   componentDidMount() {
       BooksAPI.getAll().then((books) => {
           this.setState({library: this.state.library.concat(books)})
       })
   }
-
+  // This method takes the selected book and its new shelf selection. It then assigns the book its new shelf and handles the change in state
   moveBook = (book, newShelf) => {
       BooksAPI.update(book, newShelf).then(item => {
           book.shelf = newShelf

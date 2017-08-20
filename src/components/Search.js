@@ -21,7 +21,7 @@ class Search extends Component {
     onInputChange(event) {
         const searchTerm = BooksAPI.search(event.target.value, 50);
     }
-
+    // This method takes in the query, checks if the query itself is undefined or an empty string. If so, provide no results. If there is a match, provide the results matching the query
     searchBooks(query) {
         this.setState({query: query})
         if(query === undefined || query === "") {

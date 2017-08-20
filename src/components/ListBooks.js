@@ -11,19 +11,19 @@ class ListBooks extends Component {
         let currentlyReading = [];
         let wantToRead = [];
         let read = [];
-        
+        // this condition sorts the library of books to their respective shelves. In this case it is currentlyReading
         this.props.library.forEach((book) => {
             if(book.shelf === "currentlyReading") {
                 currentlyReading.push(book)
             }
         })
-        
+        // this condition sorts the library of books to their respective shelves. In this case it is wantToRead
         this.props.library.forEach((book) => {
             if(book.shelf === "wantToRead") {
                 wantToRead.push(book)
             }
         })
-        
+        // this condition sorts the library of books to their respective shelves. In this case it is read
         this.props.library.forEach((book) => {
             if(book.shelf === "read") {
                 read.push(book)
