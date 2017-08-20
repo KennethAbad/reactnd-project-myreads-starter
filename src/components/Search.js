@@ -56,7 +56,7 @@ class Search extends Component {
                 <div className="search-books-bar">
                     <Link className="close-search" to="/">Close</Link>
                     <div className="search-books-input-wrapper">
-                        <input type="text" placeholder="Search by title or author" onchange={(e) => this.searchBooks(e.target.value)}/>
+                        <input type="text" placeholder="Search by title or author" onChange={(e) => this.searchBooks(e.target.value)}/>
                     </div>
                 </div>
                 <div className="search-books-results">
