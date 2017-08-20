@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import * as BooksAPI from './BooksAPI';
+import * as BooksAPI from '../BooksAPI';
 import Book from './Book';
+
 
 class Search extends Component {
     constructor(props) {
@@ -23,7 +24,7 @@ class Search extends Component {
 
     searchBooks(query) {
         this.setState({query: query})
-        if(query) === undefined || query === "") {
+        if(query === undefined || query === "") {
             return this.setState({query: "", results: []})
         }
         BooksAPI.search(query, 20).then((resData) => {
