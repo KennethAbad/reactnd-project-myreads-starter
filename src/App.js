@@ -6,7 +6,7 @@ import ListBooks from './components/ListBooks';
 import Search from './components/Search';
 
 
-class BooksApp extends React.Component {
+class BooksApp extends Component {
   state = {
     /**
      * TODO: Instead of using this state variable to keep track of which page
